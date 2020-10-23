@@ -1,0 +1,77 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote__container {
+  background: linear-gradient(135deg, #fcdf8a 30%, #f38381 100%);
+  width: 60%;
+  margin: 15%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #2b2727;
+}
+
+.quote__title {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.quote__title img {
+  align-self: flex-start;
+  margin: 10px;
+}
+.quote__titleText {
+  font-size: 30px;
+  align-self: center;
+  margin: 10px;
+  color: black;
+}
+
+.quote__info {
+  display: flex;
+  margin: 20px;
+}
+.quote__infoContainer {
+  box-shadow: 0 2px 5px rgb(128, 126, 146);
+  z-index: 1000;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.quote__infoText {
+  margin: 20px 0 10px 10px;
+  font-size: 20px;
+  color: brown;
+}
+.quote__infoAuthor {
+  text-align: end;
+  margin: 20px;
+  font-weight: 500;
+}
+.quote__button {
+  display: table;
+  margin: 0 auto;
+  background-color: #7367f0;
+  color: cornsilk;
+  outline: rgb(46, 97, 190);
+  border: 1px solid #7367f0;
+  box-shadow: 0 2px 5px rgb(28, 15, 153);
+  border-radius: 5px;
+  padding: 10px 40px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.quote__button:active {
+  transform: scale(0.8);
+}
+@media screen and (max-width: 640px) {
+  .quote__container {
+    width: 90%;
+    margin: 40%;
+  }
+}
